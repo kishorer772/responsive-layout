@@ -2,7 +2,12 @@ import logo from './logo.svg';
 // import './App.css';
 import './assets/css/styles.css';
 import Comments from './Comments';
+import Footer from './Footer';
+import consoleLogger from './hooks/logger';
+
 function App() {
+  console.log(process.env.REACT_APP_ENV);
+  consoleLogger('app');
   return (
     <div>
       <div className="h-full overflow-hidden">
@@ -10,12 +15,7 @@ function App() {
           React Resonsive form
         </p>
         <Comments />
-      </div>
-      <div className="bg-black py-5 list-none">
-        <li className="text-white px-2">hello</li>
-        <li className="text-white px-2">hello</li>
-        <li className="text-white px-2">hello</li>
-        <li className="text-white px-2">hello</li>
+        <Footer />
       </div>
     </div>
   );
