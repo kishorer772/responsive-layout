@@ -5,10 +5,10 @@ const PostItem = ({ post }) => {
     <div className="flex-col p-1  h-full xs:flex-1  w-full md:w-1/2 lg:w-1/3 xl:w-1/3">
       <div className="bg-lime-600 p-5 rounded-xl">
         <div className="m-2 h-60 p-2 shrink mt-1">
-          <p className="text-xl p-4 text-white text-ellipsis overscroll-y-scroll  xs:text-center  ">
+          <p className="text-xl p-4 text-white text-ellipsis overscroll-hidden  xs:text-center  ">
             {post.title}
           </p>
-          <p className="p-2 text-sm text-ellipsis w-full h-10 overflow-y-scroll ">
+          <p className="p-2  w-52 text-sm text-ellipsis  overflow-hidden h-min ">
             {post.body}
           </p>
         </div>
