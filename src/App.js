@@ -5,6 +5,7 @@ import Comments from './Comments';
 import Footer from './Footer';
 import consoleLogger from './hooks/logger';
 import { AnimatePresence, motion } from 'framer-motion';
+import GoToTopButton from './GoToTopButton';
 
 function App() {
   console.log(process.env.REACT_APP_ENV);
@@ -20,6 +21,7 @@ function App() {
       </AnimatePresence>
       <Comments />
       <Footer />
+      <GoToTopButton />
     </div>
   );
 }
