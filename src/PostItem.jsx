@@ -22,19 +22,19 @@ const PostItem = ({ post }) => {
           </div>
           <div className="flex gap-1 justify-center flex-shrink xs:flex-col sm:flex-col md:flex-col xl:flex-row">
             <motion.span
-              whileTap={{ opacity: 0.8, color: 'white' }}
+              whileTap={{ opacity: 0.8, scale: 0.8 }}
               className="bg-blue-500 p-2    cursor-pointer rounded-md text-center "
             >
               Comment
             </motion.span>
             <motion.span
-              whileTap={{ opacity: 0.8, color: 'white' }}
+              whileTap={{ opacity: 0.8, scale: 0.8 }}
               className="bg-red-500 p-2  cursor-pointer rounded-md text-center "
             >
               Comment
             </motion.span>
             <motion.span
-              whileTap={{ opacity: 0.8, color: 'white' }}
+              whileTap={{ opacity: 0.8, scale: 0.8 }}
               className="bg-fuchsia-500    p-2 cursor-pointer  rounded-md text-center   "
             >
               Comment

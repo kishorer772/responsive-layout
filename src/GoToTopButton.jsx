@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-
+import { motion } from 'framer-motion';
 export default function GoToTopButton() {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -32,7 +32,7 @@ export default function GoToTopButton() {
   };
 
   return (
-    <button
+    <motion.button
       className={`go-top-button ${isVisible ? 'visible' : 'hidden'}`}
       onClick={scrollToTop}
       style={{
@@ -48,8 +48,9 @@ export default function GoToTopButton() {
         marginRight: '1rem',
         boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)',
       }}
+      whileTap={{ scale: 0.8 }}
     >
       Top
-    </button>
+    </motion.button>
   );
 }
